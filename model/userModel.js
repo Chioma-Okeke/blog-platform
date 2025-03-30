@@ -15,6 +15,23 @@ const userModel = new mongoose.Schema(
         password: {
             type: String,
             required: true,
+        },
+        postIds: [
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: "post"
+            },
+        ],
+        commentIds: [
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: "Comment"
+            }
+        ],
+        role: {
+            type: String,
+            default: "user",
+            enum: ["user", "admin"]
         }
     },
     {
@@ -22,4 +39,4 @@ const userModel = new mongoose.Schema(
     }
 );
 
-module.exports = mongoose.model("user", userModel);
+module.exports = mongoose.model("User", userModel);
