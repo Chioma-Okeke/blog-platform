@@ -16,7 +16,6 @@ const userRouter = Router();
  *       401:
  *         description: Unauthorized.
  */
-
 userRouter.get(
     "/user/comments",
     authMiddleware,

@@ -13,7 +13,8 @@ const authMiddleware = require("../middleware/authMiddleware");
 const adminAuth = require("../middleware/adminAuth");
 
 const postRouter = Router();
-    /**
+
+/**
  * @swagger
  * /post:
  *   get:

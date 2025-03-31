@@ -11,7 +11,7 @@ const options = {
         },
         servers: [
             {
-                url: "https://your-render-url.onrender.com/api",
+                url: "https://blog-platform-dvqd.onrender.com/api",
                 description: "Production server",
             },
             {
@@ -20,7 +20,7 @@ const options = {
             },
         ],
     },
-    apis: ["./router/*.js"], // Adjust this path to match where your route files are
+    apis: ["./router/*.js"],
 };
 
 const swaggerSpec = swaggerJsdoc(options);
